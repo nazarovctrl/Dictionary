@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 public class Word {
     private Integer id;
-    private String name;
+    private String word;
     private String translate;
     private String description;
     private LocalDateTime created_date;
@@ -13,16 +13,16 @@ public class Word {
     public Word() {
     }
 
-    public Word(String name, String translate, String description, LocalDateTime created_date) {
-        this.name = name;
+    public Word(String word, String translate, String description, LocalDateTime created_date) {
+        this.word = word;
         this.translate = translate;
         this.description = description;
         this.created_date = created_date;
     }
 
-    public Word(Integer id, String name, String translate, String description, LocalDateTime created_date) {
+    public Word(Integer id, String word, String translate, String description, LocalDateTime created_date) {
         this.id = id;
-        this.name = name;
+        this.word = word;
         this.translate = translate;
         this.description = description;
         this.created_date = created_date;
@@ -36,12 +36,12 @@ public class Word {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getWord() {
+        return word;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setWord(String word) {
+        this.word = word;
     }
 
     public String getTranslate() {
@@ -70,6 +70,6 @@ public class Word {
 
     @Override
     public String toString() {
-        return id+". "+name+" -> "+translate+" -> "+description;
+        return id + ". " + word + " -> " + translate + " -> " + description;
     }
 }

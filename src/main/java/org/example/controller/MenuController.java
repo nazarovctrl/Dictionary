@@ -82,7 +82,7 @@ public class MenuController {
         String description = scanner.nextLine();
 
         Word word = new Word(word_name, translate, description, LocalDateTime.now());
-
+        System.out.println(word);
         dictionaryService.addWord(word);
 
     }

@@ -55,7 +55,7 @@ public class DictionaryUtil {
         int trueAnswerIndex = random.nextInt(0, 4);
 
         Word trueAnswer = wordList.get(array.get(trueAnswerIndex));
-        System.out.println(trueAnswer.getName());
+        System.out.println(trueAnswer.getWord());
 
         Word word = wordList.get(array.get(0));
         Word word1 = wordList.get(array.get(1));

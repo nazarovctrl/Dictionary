@@ -63,7 +63,7 @@ public class DictionaryService {
 
             Word word = wordList.get(random.nextInt(0, wordList.toArray().length));
 
-            String spelling = DictionaryUtil.getSpelling(word.getName());
+            String spelling = DictionaryUtil.getSpelling(word.getWord());
 
 
             System.out.println((word.getTranslate()));
@@ -76,7 +76,7 @@ public class DictionaryService {
                 return;
             }
 
-            if (word.getName().equals(wordForCheck)) {
+            if (word.getWord().equals(wordForCheck)) {
                 System.out.println("Correct");
                 game = false;
             }
