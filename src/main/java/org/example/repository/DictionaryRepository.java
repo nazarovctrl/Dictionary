@@ -6,7 +6,6 @@ import org.example.util.DictionaryUtil;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
-import java.time.LocalDateTime;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -107,6 +106,8 @@ public class DictionaryRepository {
 
     public int deleteWord(int id) {
         Connection connection = null;
+
+
 
         try {
             connection = DataBase.getConnection();

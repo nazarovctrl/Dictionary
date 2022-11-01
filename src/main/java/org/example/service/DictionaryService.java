@@ -60,6 +60,7 @@ public class DictionaryService {
 
         boolean game = true;
         while (game) {
+
             Word word = wordList.get(random.nextInt(0, wordList.toArray().length));
 
             String spelling = DictionaryUtil.getSpelling(word.getName());
